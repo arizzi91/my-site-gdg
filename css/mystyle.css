@@ -1,0 +1,35 @@
+section.who{
+    background-color: white;
+    font-family: verdana;
+    text-align:left;
+
+
+}
+section.contact{
+    background-color: white;
+    font-family: verdana;
+    text-align:center;
+
+
+}
+a.link1 {
+    text-decoration: none;
+    color: initial;
+}
+
+section.presentation{
+    background-color: white;
+    font-family: verdana;
+    text-align:center;
+
+
+}
+
+img {
+    width: auto;
+    height: auto;
+
+}
+div.borderbtt {
+    border-bottom: solid grey;
+}
