@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta http-equiv="refresh" content="40">
+    <meta http-equiv="refresh" content="80">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="description" content="GDG Bari">
@@ -18,11 +18,13 @@
 
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
 
+
     <title>Chi siamo?</title>
 </head>
 
 <body class="container">
 
+<script src="js/myjs.js"></script>
 
 <section class="navbar">
     <div class="row">
@@ -150,14 +152,14 @@
 
 
                 <div class="modal-body">
-                    <form>
+                    <form name="gdgform">
                         <div class="form-group">
                             <label for="name">Nome:</label>
-                            <input type="text" class="form-control" id="name">
+                            <input type="text" class="form-control" id="name" name="name">
                         </div>
                         <div class="form-group">
                             <label for="surname">Cognome:</label>
-                            <input type="text" class="form-control" id="surname">
+                            <input type="text" class="form-control" id="surname" name="surname" >
                         </div>
                         <div class="form-group">
                             <label for="date">Data di nascita:</label>
@@ -165,16 +167,13 @@
                         </div>
                         <div class="form-group">
                             <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email">
+                            <input type="email" class="form-control" id="email" name="email">
                         </div>
                         <div class="form-group">
                             <textarea class="form-control" name="message" style="min-width: 100%">Raccontaci chi sei, le tue passioni, i tuoi hobby e cosa cerchi in questa community!</textarea>
                         </div>
+                        <button id="btnsend1" type="submit" class="btn btn-default" data-dismiss="modal" onclick="validate(gdgform)">Invia!</button>
                     </form>
-                </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal" onclick="alert('la tua richiesta è stata inviata, ti contatteremo presto! :)')">Invia!</button>
                 </div>
             </div>
 
@@ -187,6 +186,7 @@
 <footer class="container-fluid text-center">
     <p>Google Developers Group Bari 2017</p>
 </footer>
+
 
 
 </body>
